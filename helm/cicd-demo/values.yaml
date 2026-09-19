@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: ghcr.io/richu2000/cicd-demo
+  tag: "1.0.1"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
